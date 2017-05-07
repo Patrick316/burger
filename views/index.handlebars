@@ -1,0 +1,41 @@
+        <h2>Add a Cat</h2>
+
+        <div id="list">
+
+        <ul>
+          {{#each burger}}
+                <li>
+                {{this.name}}
+
+                
+              </li>
+           {{/each}}
+        </ul>
+
+        </div>
+
+
+        <div id="eaten_list">  
+        {{#each burger}}
+                <li>
+                {{this.name}}
+
+               
+              </li>
+           {{/each}}
+        </ul>
+
+        </div>
+
+
+        <form class="create-update-form" action="/" method="POST">
+
+          <div class="form-group">
+            <label for="ca">Cat Name:</label>
+            <input type="text" id="ca" name="name">
+          </div>
+
+          <button type="submit">Add Burger</button>
+        </form>
+
+
